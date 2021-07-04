@@ -1,0 +1,40 @@
+<h1>Test#witaj</h1>
+<p>Find me in app/views/test/witaj.html.erb</p>
+<p>
+	<% suma = 2 + 2 %>
+
+    Suma = <%= suma%>
+<br>
+	<% imie = "Michał" %>
+	<%= "Witaj #{imie} w Kursie powodzenia :D" %>
+</p>
+
+<p>
+	
+	<%= link_to('Powrót do nawigacji', {:action=> 'nawigacja'}) %>
+
+</p>
+
+<p>
+	
+<%= link_to('link do strony index z RoR', {:action=>'index', :id=>6, :strona=>9}) %>
+
+</p>
+
+
+<p>
+	
+	<%= "Parametr id = "  + params[:id] %>
+</p>
+
+<p>
+	Parametr id = <%= params[:id] %>
+</p>
+
+<p>
+	Strona = <%= params[:strona] %>
+</p>
+
+<p>
+	Strona = <%= params[:strona].to_i + 1 %>
+</p>
